@@ -17,13 +17,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Gutink\Aliyun\Core\Profile;
+
 interface IClientProfile
 {
     public function getSigner();
-    
+
     public function getRegionId();
-    
+
     public function getFormat();
-    
+
     public function getCredential();
 }

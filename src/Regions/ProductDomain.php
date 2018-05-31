@@ -17,17 +17,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Gutink\Aliyun\Core\Regions;
+
 class ProductDomain
 {
     private $productName;
     private $domainName;
-    
+
     public function __construct($product, $domain)
     {
         $this->productName = $product;
         $this->domainName = $domain;
     }
-    
+
     public function getProductName()
     {
         return $this->productName;

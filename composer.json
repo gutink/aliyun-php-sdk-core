@@ -11,11 +11,8 @@
     ],
     "require": {},
     "autoload": {
-        "classmap": [
-            "src/"
-        ],
-        "files": [
-            "src/Config.php"
-        ]
+        "psr-4": {
+            "Gutink\\Aliyun\\Core\\Request\\V20180112\\": "src"
+        }
     }
 }
