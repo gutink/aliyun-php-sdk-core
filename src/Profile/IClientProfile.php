@@ -26,8 +26,4 @@ interface IClientProfile
     public function getFormat();
     
     public function getCredential();
-
-    public function isRamRoleArn();
-
-    public function isEcsRamRole();
 }
