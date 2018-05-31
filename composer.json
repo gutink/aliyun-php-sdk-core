@@ -1,0 +1,21 @@
+{
+    "name": "gutink/aliyun-php-sdk-core",
+    "type": "library",
+    "description": "Alibaba Cloud SDK for PHP",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "gutink",
+            "email": "gjj9527@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "files": [
+            "src/Config.php"
+        ]
+    }
+}
