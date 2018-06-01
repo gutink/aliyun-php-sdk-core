@@ -53,6 +53,9 @@ class EndpointProvider
 
     public static function getEndpoints()
     {
+    	if( self::$endpoints === null ){
+    		EndpointConfig::init();
+    	}
         return self::$endpoints;
     }
 

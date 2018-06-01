@@ -23,6 +23,7 @@ use Gutink\Aliyun\Core\Auth\Credential;
 use Gutink\Aliyun\Core\Auth\ShaHmac1Signer;
 use Gutink\Aliyun\Core\Regions\EndpointProvider;
 use Gutink\Aliyun\Core\Regions\ProductDomain;
+use Gutink\Aliyun\Core\Regions\Endpoint;
 
 class DefaultProfile implements IClientProfile
 {
@@ -112,7 +113,7 @@ class DefaultProfile implements IClientProfile
     {
         $regionIds = array($regionId);
         $productsDomains = array(new ProductDomain($product, $domain));
-        $endpoint = new Endpoint($endpointName, $regionIds, $productDomains);
+        $endpoint = new Endpoint($endpointName, $regionIds, $productsDomains);
         array_push(self::$endpoints, $endpoint);
     }
 
